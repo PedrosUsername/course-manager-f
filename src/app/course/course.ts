@@ -1,6 +1,6 @@
 export class Course {
   id: number | undefined;
-  name: string | undefined;
+  name!: string;
   imageUrl: string | undefined;
   price: number | undefined;
   code: string | undefined;
