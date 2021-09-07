@@ -1,10 +1,10 @@
 export class Course {
-  id: number | undefined;
+  id!: number;
   name!: string;
-  imageUrl: string | undefined;
-  price: number | undefined;
-  code: string | undefined;
-  duration: number | undefined;
+  imageUrl!: string;
+  price!: number;
+  code!: string;
+  duration!: number;
   rating!: number;
-  releaseDate: string | undefined;
+  releaseDate!: string;
 }
