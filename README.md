@@ -1,7 +1,7 @@
 #### Index
 
-* [API](https://github.com/PedrosUsername/API-Gerenciamento-de-Pessoas/tree/course-manager) <--(voce esta aqui)
-* [Client](https://github.com/PedrosUsername/course-manager-f)
+* [API](https://github.com/PedrosUsername/API-Gerenciamento-de-Pessoas/tree/course-manager)
+* [Client](https://github.com/PedrosUsername/course-manager-f) <--(voce esta aqui)
 
 # CourseManager
 
