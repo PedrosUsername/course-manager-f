@@ -6,11 +6,13 @@ import { ReplacePipe } from '../pipe/replace.pipe';
 import { StarComponent } from '../star/star.component';
 import { CourseInfoComponent } from './course-info.component';
 import { CourseListComponent } from './course-list.component';
+import { CourseNewComponent } from './course-new.component';
 
 @NgModule({
     declarations: [
       CourseListComponent,
       CourseInfoComponent,
+      CourseNewComponent,
       ReplacePipe,
       StarComponent,
     ],
@@ -23,6 +25,9 @@ import { CourseListComponent } from './course-list.component';
         },
         {
           path: 'courses/info/:id', component: CourseInfoComponent
+        },
+        {
+          path: 'courses/add', component: CourseNewComponent
         }
       ])
     ],

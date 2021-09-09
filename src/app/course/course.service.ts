@@ -28,10 +28,8 @@ export class CourseService {
     }
 
 
-    save(course: Course): void{
-        if(course.id){
-            const index = COURSES.findIndex((courseIterator: Course) => courseIterator.id === course.id);
-        }
+    addCourse(course: Course): Observable<Course> {
+        return this.httpClient.post<Course>(this.coursesUrl + '/', course);
     }
     updateOnServer(course: Course): Observable<Course>{
         if(course.id){

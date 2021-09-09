@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Course } from './course';
 import { CourseService } from './course.service';
 
@@ -11,6 +11,7 @@ export class CourseInfoComponent implements OnInit{
 
     constructor(
         private activatedRoute: ActivatedRoute,
+        private router: Router,
         private courseService: CourseService
     ){}
 
@@ -30,14 +31,15 @@ export class CourseInfoComponent implements OnInit{
         })
     }
 
-    save(): void{
-        this.courseService.save(this.course)
-    }
     updateOnServer(): void {
         this.courseService.updateOnServer(this.course).subscribe({
             next: c => console.log('updated', c),
             error: err => console.log('ERROR', err)
         });
+        this.gotoList();
     }
 
+    gotoList() {
+        this.router.navigate(['/courses']);
+    }
 }
