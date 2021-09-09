@@ -27,6 +27,7 @@
             <td>{{ course.releaseDate }}</td>
             <td>
                 <a [routerLink]="['./info', course.id]" class="btn btn-primary">EDIT</a>
+                <button (click)="deleteById(course.id)" class="btn btn-danger">DEL</button>
             </td>
         </tr>
     </tbody>
