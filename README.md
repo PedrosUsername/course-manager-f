@@ -12,3 +12,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Access the project on:
 
 * https://dioassign-03-f.herokuapp.com
+
+
+
+Ex. Entrada válida:
+
+Name: Angular Intro,
+Code: XLL-557,
+Price: 19.99,
+Duration: 4,
+Rating: 3.5,
+Description: Curso Legal,
+Release Date: 2002-05-06
