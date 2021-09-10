@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class CourseService { 
 
-    private coursesUrl: string = 'http://localhost:8080/api/v1/courses';
+    private coursesUrl: string = 'https://dioassign-03.herokuapp.com/api/v1/courses';
 
     constructor(private httpClient: HttpClient){}
 
