@@ -33,10 +33,9 @@ export class CourseInfoComponent implements OnInit{
 
     updateOnServer(): void {
         this.courseService.updateOnServer(this.course).subscribe({
-            next: c => console.log('updated', c),
+            next: c => this.gotoList(),
             error: err => console.log('ERROR', err)
         });
-        this.gotoList();
     }
 
     gotoList() {
