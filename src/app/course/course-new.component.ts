@@ -20,10 +20,9 @@ export class CourseNewComponent implements OnInit{
 
     save(): void{
         this.courseService.addCourse(this.course).subscribe({
-            next: () => console.log("created"),
+            next: () =>   this.gotoList(),
             error: err => console.log("ERROR", err)
         });
-        this.gotoList()
     }
 
     gotoList() {
